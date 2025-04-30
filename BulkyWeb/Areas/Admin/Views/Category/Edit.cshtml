@@ -1,0 +1,23 @@
+﻿@model CategoryViewModel
+<div class="card shadow border-0">
+	<div class="card-header bg-secondary bg-gradient ml-0 py-2">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h2 class="text-white py-2">Edit Category</h2>
+			</div>
+		</div>
+	</div>
+	<div class="card-body p-4">
+		<form method="post">
+			<input type="hidden" asp-for="Id" />
+			
+			<partial name="_AddEditCategoryHTMLPartial" model="Model" />
+
+		</form>
+	</div>
+</div>
+
+@section Scripts
+{
+	<partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,27 @@
+﻿@model CategoryViewModel
+
+@{
+	ViewData["Title"] = "Details";
+}
+
+<div class="card shadow border-0">
+	<div class="card-header bg-secondary bg-gradient ml-0 py-2">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h2 class="text-white py-2">Category Details</h2>
+			</div>
+		</div>
+	</div>
+	<div class="card-body p-4">
+		<div class="border p-3 mt-4">
+			
+			<partial name="_CategoryDetailsHtmlPartial" model="Model" />
+
+			<hr />
+			<a class="btn btn-primary" asp-area="Admin" asp-controller="Category" asp-action="Index">
+				Back to List
+			</a>
+		</div>
+	</div>
+</div>
+
